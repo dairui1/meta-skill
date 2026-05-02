@@ -1,6 +1,6 @@
 # meta-skill
 
-一份规范，用来造"薄、能自愈、技能能沉淀"的 agent skill。范式源自 [browser-use/browser-harness](https://github.com/browser-use/browser-harness)，本仓库把它抽象成通用形态。
+一份规范，用来造"薄、能自愈、技能能沉淀"的 agent skill。
 
 → 请读 [SPEC.md](./SPEC.md)。
 
@@ -24,3 +24,7 @@
 ## License
 
 [MIT](./LICENSE)
+
+---
+
+_Inspired by [browser-use/browser-harness](https://github.com/browser-use/browser-harness)._

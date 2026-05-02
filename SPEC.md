@@ -1,6 +1,6 @@
 # meta-skill SPEC
 
-一份规范，定义"什么是合格的 skill"——薄、能自愈（self-heal）、技能能沉淀。范式源自 [browser-use/browser-harness](https://github.com/browser-use/browser-harness)，本规范把它抽象成可在任何能力领域复用的形态。
+一份规范，定义"什么是合格的 skill"——薄、能自愈（self-heal）、技能能沉淀。可在任何能力领域复用：浏览器、终端、API、设计工具…
 
 本文中"skill"指**符合本规范的 agent 能力包**：一个目录，含 `SKILL.md` + `helpers.*` + 双层 sub-skills 目录。"meta-skill"指本规范本身。
 
@@ -15,8 +15,6 @@ helpers 不全时，agent **直接编辑** helpers 源文件补齐功能，而�
 所有沉淀放进两个固定目录：
 - `interaction-skills/`：与目标系统交互的**通用机制**（怎么做）。例：浏览器的 dialog/iframe/upload；终端的 PTY/ANSI/信号；API 的 auth/分页/重试。
 - `domain-skills/`：针对**具体目标**的工作流（对谁做）。例：浏览器的 tiktok/linkedin；API 的 notion/stripe；文件系统的 docker/git。
-
-命名沿用 browser-harness 原词，不再抽象。
 
 ### 1.3 Contribute back（沉淀回传）
 agent 学到非显然的事必须沉淀成 sub-skill 文件。**值得沉淀**：私有 API、稳定 selector / 命令、框架怪癖、URL 或路径模式、wait 的原因、陷阱。**不该写**：像素坐标、任务流水账、密钥/会话状态。
@@ -70,13 +68,7 @@ agent 在 helpers 不全时的 4 步标准动作：
 
 ---
 
-## 5. 参考实现
-
-[browser-use/browser-harness](https://github.com/browser-use/browser-harness)——~600 行 Python 操作浏览器，本规范的活样板。
-
----
-
-## 6. 常见反模式
+## 5. 常见反模式
 
 skill 容易被做"厚"，以下是高频违规：
 
@@ -91,6 +83,6 @@ skill 容易被做"厚"，以下是高频违规：
 
 ---
 
-## 7. License & contributing
+## 6. License & contributing
 
-MIT。欢迎 PR——优先：参考实现的链接、反模式补充。
+MIT。欢迎 PR——优先：反模式补充、命名/结构歧义澄清。

@@ -25,7 +25,7 @@ fetch `https://github.com/dairui1/meta-skill/raw/main/SPEC.md` 全文先读。�
 
 ```
 <name>-skill/
-├── README.md            一段说明 + 仿 browser-harness 的安装提示词
+├── README.md            一段说明 + 装到 ~/.claude/skills/ 的提示词
 ├── SKILL.md             必须提到：先读 helpers / 允许 self-heal /
 │                        必须 contribute back / 链接回 meta-skill SPEC
 ├── helpers.*            一份起步文件，2-3 个跨过所选传输的原语函数；
@@ -43,7 +43,7 @@ fetch `https://github.com/dairui1/meta-skill/raw/main/SPEC.md` 全文先读。�
 
 ## Step 3 — 对照 SPEC 自检
 
-重读 SPEC §2「必备结构」和 §6「常见反模式」，遍历刚生成的目录树确认每一条。违反就当场改。
+重读 SPEC §2「必备结构」和 §5「常见反模式」，遍历刚生成的目录树确认每一条。违反就当场改。
 
 ## Step 4 — 首次冒烟
 
@@ -61,4 +61,4 @@ fetch `https://github.com/dairui1/meta-skill/raw/main/SPEC.md` 全文先读。�
 
 - Step 0 强制远端拉 SPEC：保证本 skill 永远跟规范同步
 - Step 2 的 do-NOT 清单：拦住习惯性加框架的冲动
-- Step 5 的禁令：来自 browser-harness README 的原话精神
+- Step 5 的禁令：人类手写的 skill 不反映真实工作路径，会污染技能库
