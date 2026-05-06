@@ -1,0 +1,26 @@
+skill/SKILL.md
+  259cec31cce601b7 2-3,6,8-10,14,20-25,29,32-53,56-64,66-72,76-86,90-95,101-104,109-110
+README.md
+  259cec31cce601b7 7-9,16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "47c31bd749c410d74865ee3c3b7a01efa390bfd6",
+  "prompts": {
+    "259cec31cce601b7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "97152ad6-1806-48ee-bedb-118771263567",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "linyongcong",
+      "messages": [],
+      "total_additions": 88,
+      "total_deletions": 39,
+      "accepted_lines": 80,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/a14e542f2410ea85a1f508b3b6d2197afc44e1c212a38dd2a74e9aae25870094"
+    }
+  }
+}
