@@ -4,15 +4,17 @@
 
 → 请读 [SPEC.md](./SPEC.md)。
 
-## 安装 `create-skill` skill
+## 安装 `create-harness` skill
+
+`create-harness` 用来产出 browser-harness 那类**重型** skill：CLI 在 `$PATH` + `agent-workspace/` 分离 + `install.md` + 富 SKILL.md。轻量 API 包装请直接按 SPEC §2 手动建最小骨架。
 
 把下面这段贴进 Claude Code：
 
 ```
 请读 https://github.com/dairui1/meta-skill/raw/main/SPEC.md 理解 meta-skill 范式。
 然后把 https://github.com/dairui1/meta-skill/raw/main/skill/SKILL.md 的内容下载，
-写入 ~/.claude/skills/create-skill/SKILL.md。完成后确认文件存在，并告诉我以后
-可以随时让你"做一个 <名字>-skill"。
+写入 ~/.claude/skills/create-harness/SKILL.md。完成后确认文件存在，并告诉我以后
+可以随时让你"做一个 <名字>-harness"。
 ```
 
 零依赖、不用 clone、不用装脚本。
